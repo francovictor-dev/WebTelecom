@@ -1,0 +1,663 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'BloggerSansRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	min-height: 520px;
+	padding:40px 2%;
+	/*max-height: 700px;*/
+	background-size: cover;
+	background-position: center;
+	background-image: url('../imagens/Header.png');
+}
+
+
+header .logo object{
+	position: absolute;
+	top: 1%;
+	left: 15%;
+	width: 15%;
+	min-width: 150px;
+	float: left;
+}
+
+/*
+header .logo img{
+	position: relative;
+	top: -15px;
+	left: 100px;
+	width: 10%;
+	min-width: 90px;
+	height: 10%;
+	float: left;
+}
+*/
+
+
+
+/*----------------------------*/
+/*-------MENU DESKTOP---------*/
+/*----------------------------*/
+
+header .desktop-menu nav{
+	float: right;
+	width: 62%; 
+	margin-right: 8%;
+}
+
+header .desktop-menu nav.menu ul{
+	list-style-type: none;
+}
+
+header .desktop-menu nav.menu object{
+	display: none;
+	width: 6%;
+}
+
+header .desktop-menu nav li{
+	float: left;
+	padding:0 20px;
+	color: white;
+}
+
+header .desktop-menu nav .borda{
+	height: 10px;
+	background-color: #fff;
+	border: 0px solid #fff;
+	border-radius: 10px;
+	margin-left: 50%;
+	margin-right: 50%;
+	transition-duration: 0.6s;
+}
+
+header .desktop-menu nav li:hover > .borda{
+	margin-left: -13%;
+	margin-right: -13%;
+	background-color: #D12626;
+}
+
+header .desktop-menu nav li a{
+	font-size: 2vw;
+	color: white;
+	text-decoration: none;
+}
+
+header .desktop-menu nav li a:hover{
+	color: #fff;
+}
+
+/*----------------------------*/
+/*--------MENU MOBILE---------*/
+/*----------------------------*/
+
+header .mobile-menu{
+	display: none;
+}
+
+header .mobile-menu .icone-mobile{
+	position: fixed;
+	right: 5%;
+	padding: 2% 2%;
+	z-index: 1;
+}
+
+header .mobile-menu .nav-mobile{
+	position: fixed;
+	right: 0;
+	top: 90px;
+	z-index: 1;
+	border-top-right-radius: 0px; 
+	display: none;
+}
+
+header .mobile-menu .nav-mobile a:first-of-type{
+	background-color: #590000;
+	border-color: #590000;
+}
+
+.clear{
+	clear: both;
+}
+
+/*----------------------------*/
+/*--------TíTULO HEADER-------*/
+/*----------------------------*/
+
+header .titulo{
+	position: relative;
+	text-align: right;
+	width: 88%;
+	padding-top: 5%;
+}
+
+header .text1{
+	display: none;
+	position: relative;
+	font-style: normal;
+	font-weight: 900;
+	color: white;
+	font-size: 60px;
+	
+}
+
+header .botao{
+	margin-top: 5%;
+	width: 88%;
+	text-align: right;
+}
+
+header .btn-danger{
+	color: white;
+	background-color: #D12626;
+	border-color: #D12626;
+	height: 80px;
+	width: 240px;
+	font-size: 30px;
+}
+
+header .moca{
+	opacity: 0;
+	position: absolute;
+	bottom: 0px;
+	float: left;
+	margin-left: 3%;
+	width: 38%;
+}
+
+header .moca img{
+	height: 100%;
+	width: 100%;
+}
+
+header .wifi{
+	position: absolute;
+	bottom: calc(110% / 2);
+	left: 25%;
+
+	width: 14%;
+	display: none;
+}
+
+header .wifi img{
+	height: 100%;
+	width: 100%;
+}
+
+/*----------------------------*/
+/*-----SESSÃO QUEM SOMOS------*/
+/*----------------------------*/
+
+section.quem-somos{
+	height: 550px;	
+	width: 100%;
+}
+
+section.quem-somos .container{
+	color: #606060;
+}
+
+section.quem-somos .container .row{
+	padding-top: 80px;
+}
+
+
+section.quem-somos .container .row .left h2{
+	padding-bottom: 20px; 
+	font-weight: 700;
+}
+
+section.quem-somos .container .row .right img{
+	width: 100%;
+	height: auto;
+}
+
+section.quem-somos .container .row .left p{
+	font-size: 130%;
+	text-align: justify;
+}
+
+section.quem-somos .container .row .right object{
+	padding-left: 10%; 
+}
+
+/*----------------------------*/
+/*------SESSÃO PLANOS---------*/
+/*----------------------------*/
+
+section.planos{
+	background-color: #590000;
+	min-height: 1200px;	
+	height: auto;	
+	width: 100%; 
+}
+
+section.planos .titulo{
+	padding-top: 80px;
+	padding-bottom: 3%; 
+	color: white;
+}
+
+section.planos .titulo h2{
+	font-weight: 900;
+}
+
+section.planos .container .row .plano-unit{
+	height: 390px;
+	width: 280px;
+	background-color: #590000;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 60px;
+	border: 6px solid white;
+}
+
+section.planos .container .row .plano-unit .header{
+	width: 100%;
+
+	background-color: #590000;
+	border-bottom: 3px solid white;
+	/*border-top-left-radius: 32px;
+	border-top-right-radius: 32px;
+	*/
+}
+
+section.planos .container .row .plano-unit .header h2{
+	color: #D12626;
+	padding-top: 10px;
+}
+
+section.planos .container .row .plano-unit .conteudo1{
+	width: 100%;
+	background-color: #590000;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
+section.planos .container .row .plano-unit .conteudo1 .img1{
+	width: 15%;
+	margin-right: 5px;
+}
+
+section.planos .container .row .plano-unit .conteudo1 .img2{
+	width: 15%;
+	margin-right: 5px;
+}
+
+section.planos .container .row .plano-unit .conteudo1 p{
+	color: white;
+	padding: 20px 0px 0px 12px;
+}
+
+section.planos .container .row .plano-unit .conteudo2{
+	width: 100%;
+	background-color: #590000;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
+section.planos .container .row .plano-unit .conteudo2 h2{
+	color: #D12626;
+	text-align: center;
+	padding: 14px 0px;
+}
+
+section.planos .container .row .plano-unit .footer{
+	width: 100%;
+	background-color: #590000;
+	border-top: 3px solid white;
+}
+
+section.planos .container .row .plano-unit .footer:hover{
+	cursor: pointer;
+}
+
+section.planos .container .row .plano-unit .footer a{
+	text-decoration: none;
+}
+
+section.planos .container .row .plano-unit .footer h2{
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: -20px;
+}
+
+/*----------------------------*/
+/*--SESSÃO DISPONIBILIDADE----*/
+/*----------------------------*/
+
+section.disponibilidade{
+	height: 600px;	
+	width: 100%; 
+	background-image: url('../imagens/Disponibilidade.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+section.disponibilidade .titulo{
+	padding-top: 5%;
+	padding-bottom: 4%;
+}
+
+section.disponibilidade .titulo h2{
+	font-weight: 700;
+	text-align: center;
+	color: white;	
+}
+
+section.disponibilidade .caixa{
+	height: 270px;
+	width: 620px;
+	background-color: rgba(242, 242, 242, 0.5);
+	border-radius: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+section.disponibilidade .caixa .info{
+	color: black;
+	padding-top: 20px;
+	margin-bottom: -90px;
+}
+
+section.disponibilidade .caixa .busca{
+	height: 70px;
+	width: 300px;
+	border-radius: 10px;
+	background-color: rgba(252, 252, 252, 1);
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	top: 35%;
+}
+
+section.disponibilidade .caixa .busca .buscar{
+	cursor: pointer;
+}
+
+section.disponibilidade .caixa p{
+	position: relative;
+	top: 38%;
+	padding-top: 20px;
+	color: #606060;
+	text-align: center;
+	font-size: 20px;
+}
+
+section.disponibilidade .caixa .busca img{
+	width: 40px;
+	margin-left: 5%;
+}
+
+section.disponibilidade .caixa .busca input{
+	margin-top: 5%;
+	height: 40px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+section.disponibilidade .caixa .busca input[type="text"]{
+	font-size: 24px;
+}
+
+/*----------------------------*/
+/*-----SESSÃO CONTATO---------*/
+/*----------------------------*/
+
+section.contato{
+	background-color: white;
+	height: 600px;	
+	width: 100%; 
+}
+
+section.contato .container .row{
+	padding-top: 80px;
+}
+
+section.contato .container .row .left img{
+	width: 70%;
+	padding-top: 15%;
+}
+
+section.contato .container .row .right h2{
+	font-weight: 900;
+}
+
+section.contato .container .row .right{
+
+}
+
+section.contato .container .row .left{
+
+}
+
+section.contato .container .row .right h2.subtitulo1{
+	font-weight: 400;
+	padding: 20px 0 10px 0;
+}
+
+section.contato .container .row .right h2.subtitulo2{
+	font-weight: 400;
+	padding: 40px 0 10px 0;
+}
+
+section.contato .container .row .right ul{
+	list-style-type: none;
+	padding: 0 0 0 0;
+}
+
+section.contato .container .row .right ul li .imagem{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+section.contato .container .row .right ul li .imagem img{
+	height: 100%;
+	width: 100%;
+}
+
+section.contato .container .row .right ul li{
+	padding: 10px 0 10px 0;
+	font-size: 22px;
+}
+
+/*----------------------------*/
+/*----------RODAPE------------*/
+/*----------------------------*/
+
+section.rodape{
+	background-image: url('../imagens/Rodape.png');
+	background-repeat: no-repeat;
+	height: 500px;	
+	width: 100%; 
+}
+
+section.rodape .container{
+	width: 100%;
+	height: 393px;
+}
+
+section.rodape .container .row{
+	height: 100%;
+}
+
+section.rodape .container .left object{
+	width: 50%;
+	margin-top: 100px;
+	min-width: 130px;
+}
+
+section.rodape .container .right{
+	margin-top: 60px;
+}
+
+section.rodape .container .right h3{
+	color: white;
+	font-weight: 700;
+
+}
+
+section.rodape .container .right ul {
+	list-style-type: none;
+	color: white;
+	padding: 0;
+}
+
+section.rodape .container .right ul li{
+	padding: 8px 0 8px 0; 
+}
+
+section.rodape .container .right .quem-somos p{
+	color: white;
+	text-align: justify;
+}
+
+section.rodape .container .right .suporte{
+
+}	
+
+section.rodape .container .right .suporte img{
+	width: 30px;
+}	
+
+section.rodape .container .suporte a{
+	text-decoration: none;
+	color: white;
+}	
+
+section.rodape .direitos-autorais{
+	background-color: #590000;
+	width: 100%;
+	height: 110px;
+	top: -30px;
+}
+
+section.rodape .direitos-autorais p{
+	text-align: center;
+	position: relative;
+	top: 40%;
+	color: white;
+}
+
+/*----------------------------*/
+/*---------MÉTODOS------------*/
+/*----------------------------*/
+
+@media screen and (max-width: 1024px){
+	section.quem-somos .container{
+		text-align: center;
+	}
+
+	section.quem-somos .container .left{
+
+	}
+
+	section.quem-somos .container .right{
+		display: none;
+	}
+
+	section.quem-somos .container .left h2{
+		
+	}
+
+	section.contato .container{
+		text-align: center;
+	}
+
+	section.contato .container .row .left{
+		display: none;
+	}
+
+
+	section.rodape .container .right .suporte ul li{
+		display: inline-block;
+		padding-right: 0px;
+	}
+	
+	section.rodape .container .right h3{
+		margin-top: 0%;
+	}
+
+	section.rodape .container .right .suporte{
+		margin-top: 0%;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	header .desktop-menu{
+		display: none;
+	}
+
+	header .mobile-menu{
+		display: block;
+	}
+	header .titulo{
+		width: 100%;
+		padding-top: 20%;
+		text-align: center;;
+	}
+
+	header .botao{
+		width: 100%;
+		text-align: center;
+	}
+
+	header .moca{
+		display: none;
+	}
+
+	header .wifi img{
+		display: none;
+	}
+
+	section.planos .container .row .plano-unit{
+		opacity: 1;
+	}
+
+	section.rodape .container .right .suporte span{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 580px){
+
+	header .logo{
+		margin-left: -8%;
+		
+	}
+
+	header .titulo{
+		padding-top: 30%;
+	}
+
+	section.disponibilidade .caixa{
+		border-radius: 0px;
+		width: 100%;
+	}
+	section.disponibilidade {
+		background-position: 50% 30%;
+		background-size: 1000px;
+	}
+
+
+}
+
+
+
+/*
+@media screen and (max-width: 768px){
+	header{
+		top: 0px; 
+	}
+{
